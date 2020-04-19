@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Executive/Supervisor Registration Page</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/salesExecutive.css">
+</head>
+<body>    
+    <form method="POST" action="/addsalesExecutive" class="Sales" >
+        <h1>Sales Executive/Supervisor Registration</h1>
+        <fieldset class="row1">
+            <legend>Personal Information</legend>
+            <p>
+                <label>First Name *</label>
+                <input type="text" class="long" id="fname" name="fname" placeholder="First Name"/>
+            </p>
+            <p>
+                <label>Last Name *</label>
+                <input type="text" class="long" id="lname" name="lname" placeholder="Last Name"/>
+            </p>
+            <p>
+                <label>Date of Birth * </label>
+                <input type="date" class="long" id="dob" name="dob" min="20" max="50"/>
+            </p>
+            <p>
+                <label>Email Address *</label>
+                <input type="email" placeholder="Email Address" class="long" id="emailAd" name="emailAd" id="emailAd" />
+            </p>
+        </fieldset>
+
+        <fieldset class="row2">
+            <legend>Other Information </legend>
+            <p>
+                <label>Supervisors *</label>
+                <input type="text" class="long" id="super" name="super" placeholder="supervisor" style="float: right;"/>
+            </p>
+            <p>
+                <label>Working Day's *</label>
+                <input type="text" maxlength="10" class="long" id="dutyDays" name="dutyDays" placeholder="Duty days" style="float: right;"/>
+            </p>
+        
+        </fieldset>
+
+
+        <fieldset class="row3">
+            <legend>Credentials</legend>
+            <p>
+                <label>Sales Id *</label>
+                <input type="text" class="long" id="salesid" name="id" placeholder="Enter Id" style="float: right;"/>
+            </p>
+            <p>
+                <label>Password *</label>
+                <input type="text" class="long" id="pass" name="pass" placeholder="password" style="float: right;"/>
+            </p>
+            <div class="infobox"><h4>Check Documents</h4>
+                <p>As the supervisor/Sales Executive, you are required to cross-check/verify all the documents that are submitted in by the customer</p>
+            </div>
+        </fieldset>
+
+        <div><button type="submit" class="button1">Register Sales Executive &raquo;</button></div>
+        <div><button class="button2">Cancel &raquo;</button></div>
+    </form>
+  
+    <div class="footer_text text-center">
+        <p>BodaBoda-Banja &copy;<script>document.write(new Date().getFullYear());</script> | All RIghts reserved</p>
+    </div>
+    <script src="salesExecutive.js"></script>
+</body>
+</html>

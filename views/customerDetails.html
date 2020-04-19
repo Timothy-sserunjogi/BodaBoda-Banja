@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration Page</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/customerDetails.css">
+</head>
+<body>    
+    <form action="/addCustomer" class="customer" method="POST">
+        <h1>Customer Registration</h1>
+        <fieldset class="row1">
+            <legend>Personal Information</legend>
+            <p>
+                <label class="names1" id="names1">Names *</label>
+                <input type="text" class="long" name="fullnames" placeholder="Full names"/>
+            </p>
+            <p>
+                <label>Phone Number *</label>
+                <input type="text" maxlength="10" name="phone" placeholder="Phone number"/>
+            </p>
+            <p>
+                <label>Marital Status  </label>
+                <input type="text" class="long" name="maritalStatus" placeholder="Marital Status"/>
+            </p>
+            <p>
+                <label>Date of Birth * </label>
+                <input type="date" name="dob" min="20" max="50"/>
+            </p>
+            <p>
+                <label>Nationality *</label>
+                <select>
+                    <option value="1">Ugandan</option>
+                    <option value="2">Kenyan</option>
+                    <option value="3">Tanzanian</option>
+                    <option value="4">Rwandese</option>
+                    <option value="5">Burundian</option>
+                    <option value="6">South-Sudan</option>
+                </select>
+            </p>
+            <p>
+                <label class="nin" id="nin"> NIN *</label>
+                <input type="text" class="long" name="nationalId" placeholder="NIN Number"/>
+            </p>
+         
+
+        </fieldset>
+
+        <fieldset class="row2">
+            <legend>Referee's Details </legend>
+            <p>
+                <label>Referee's Name *</label>
+                <input type="text" class="long" name="refereeName" placeholder="Referee's full name"/>
+            </p>
+            <p>
+                <label>Referee's Phone *</label>
+                <input type="text" maxlength="10" name="refereePhone" placeholder="Referee's Phone number"/>
+            </p>
+            <p>
+                <label>Referee's Occupation * </label>
+                <select>
+                    <option value="1">Accountant</option>
+                    <option value="2">Company Manager</option>
+                    <option value="3">Business Man</option>
+                    <option value="2">Teacher</option>
+                    <option value="2">Politician</option>
+                </select>
+            </p>
+            <p>
+                <label>Referee's date of birth *</label>
+                <input type="date" name="dob2" min="20" max="50"/>
+            </p>
+        </fieldset>
+
+
+        <fieldset class="row3">
+            <legend>Further Information</legend>
+            <p>
+                <label>Other loan's if any!</label>
+                <input type="checkbox" name="info1" value="" />
+            </p>
+            <p>
+                <label>Stage Name *</label>
+                <input type="text" class="long" name="stage" placeholder="Stage name"/>
+            </p>
+            <p>
+                <label>LC1 *</label>
+                <input type="text" class="long" name="lc1" placeholder="LC1"/>
+            </p>
+            <p>
+                <label>LC3 *</label>
+                <input type="text" class="long" name="lc3" placeholder="LC3"/>
+            </p>
+            <p>
+                <label>CustomerId *</label>
+                <input type="text" class="long" name="cusId" placeholder="CustomerId"/>
+            </p>
+            <p>
+                <label> Wanted Vehicle *</label>
+                <select>
+                    <option value="1">Boda Boda</option>
+                    <option value="2">Tuktuk</option>
+                    <option value="3">Tricycle</option>
+                </select>
+            </p>
+            <p>
+                <label>Down Payement *</label>
+                <select>
+                    <option  value="1">850,000/-</option>
+                    <option value="2">214,590/-</option>
+                    <option value="3">950,000/-</option>
+                    <option value="4">294,590/</option> 
+                </select> <br><br>
+            </p>
+            <div class="infobox"><h4>Check Documents</h4>
+                <p>As the supervisor/Sales Executive, you are required to cross-check/verify all the documents that are submitted in by the customer</p>
+            </div>
+        </fieldset>
+
+        <fieldset class="row4">
+            <legend>Document Verification</legend>
+            <p class="agreement">
+                <input type="checkbox" name="info2" value=""/>
+                <label>* The customer accepted the <a href="#">Terms and Conditions</a></label>
+            </p>
+            <p class="agreement">
+                <input type="checkbox" name="info3" value=""/>
+                <label>LC1 letter received.</label>
+            </p>
+            <p class="agreement">
+                <input type="checkbox" name="nifo4" value=""/>
+                <label>LC3 letter received.</label>
+            </p>
+        </fieldset>
+        <div><button class="button1">Register Customer &raquo;</button></div>
+        <div><button class="button2">Cancel &raquo;</button></div>
+    </form>
+  
+    <div class="footer_text text-center">
+        <p>BodaBoda-Banja &copy;<script>document.write(new Date().getFullYear());</script> | All RIghts reserved</p>
+    </div>
+</body>
+</html>

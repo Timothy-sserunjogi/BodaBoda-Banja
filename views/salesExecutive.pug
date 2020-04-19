@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Sales Executive/Supervisor Registration Page
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/salesExecutive.css")
+  body
+    form.Sales(method="POST" action="/addsalesExecutive")
+      h1 Sales Executive/Supervisor Registration
+      fieldset.row1
+        legend Personal Information
+        p
+          label First Name *
+          input.long(type="text" name="fname" placeholder="First Name")
+        p
+          label Last Name *
+          input.long(type="text" name="lname" placeholder="Last Name")
+        p
+          label Date of Birth * 
+          input.long(type="date" name="dob" min="20" max="50")
+        p
+          label Email Address *
+          input#emailAd.long(type="email" placeholder="Email Address" name="emailAd")
+      fieldset.row2
+        legend Other Information 
+        p
+          label Supervisors *
+          input.long(type="text" name="super" placeholder="supervisor" style="float: right;")
+        p
+          label Working Day's *
+          input.long(type="text" maxlength="10" name="dutyDays" placeholder="Duty days" style="float: right;")
+      fieldset.row3
+        legend Credentials
+        p
+          label Sales Id *
+          input.long(type="text" name="id" placeholder="Enter Id" style="float: right;")
+        p
+          label Password *
+          input.long(type="text" name="pass" placeholder="password" style="float: right;")
+        .infobox
+          h4 Check Documents
+          p
+            | As the supervisor/Sales Executive, you are required to cross-check/verify all the documents that are submitted in by the customer
+      div
+        button.button1 Register Sales Executive »
+      div
+        button.button2 Cancel »
+    .footer_text.text-center
+      p
+        | BodaBoda-Banja ©
+        script.
+          document.write(new Date().getFullYear());
+        |  | All RIghts reserved
